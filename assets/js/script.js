@@ -17,7 +17,7 @@ const productos = [
     }
   ];
   
-  // Función para realizar la búsqueda
+  // funcion busqueda
   function search() {
     const searchText = document.getElementById("searchInput").value.toLowerCase();
     const resultados = productos.filter(producto =>
@@ -27,7 +27,7 @@ const productos = [
     mostrarResultados(resultados);
   }
   
-  // Función para mostrar los resultados de la búsqueda
+  // Funcion para mostrar los resultados 
   function mostrarResultados(resultados) {
     const contenedorResultados = document.getElementById("resultadosBusqueda");
     contenedorResultados.innerHTML = "";
