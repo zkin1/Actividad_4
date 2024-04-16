@@ -94,5 +94,38 @@ body {
   }
   
   .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #555;
   }
+nav {
+    background-color: #555;
+    padding: 0;
+    height: 50px;
+}
+
+.menu {
+    margin-top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.menu li a:hover {
+    background-color: #272624;
+}
