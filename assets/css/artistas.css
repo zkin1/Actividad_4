@@ -1,0 +1,66 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #555;
+    padding: 0;
+    height: 50px;
+    margin: 0; /* Asegura que no haya margen en cualquier dirección */
+}
+
+/* Resto de tus estilos */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.menu li a:hover {
+    background-color: #272624;
+}
+
+.menu .login {
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.menu .register {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.menu .login a,
+.menu .register a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+nav img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
