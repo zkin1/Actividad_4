@@ -56,3 +56,85 @@ const productos = [
       contenedorResultados.appendChild(divProducto);
     });
   }
+  const form = document.getElementById('login-form');
+const emailInput = document.getElementById('email');
+const emailError = document.getElementById('email-error');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = emailInput.value;
+
+  if (isValidEmail(email)) {
+    // Aquí puedes agregar la lógica para procesar el inicio de sesión
+    console.log('Email válido:', email);
+  } else {
+    emailError.textContent = 'Por favor, ingresa un email válido.';
+  }
+});
+
+function isValidEmail(email) {
+  // Expresión regular para validar el formato del email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+// Función para guardar los datos del usuario en el localStorage
+function saveUser(user) {
+  localStorage.setItem('user', JSON.stringify(user));
+}
+
+// Función para obtener los datos del usuario del localStorage
+function getUser() {
+  return JSON.parse(localStorage.getItem('user'));
+}
+
+// Función para validar el inicio de sesión
+function login(username, password) {
+  const user = getUser();
+  if (user && user.username === username && user.password === password) {
+    return true;
+  }
+  return false;
+}
+function registerUser(event) {
+  event.preventDefault(); // Evita que se envíe el formulario de manera predeterminada
+
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirm-password').value;
+
+  // Validar que las contraseñas coincidan
+  if (password !== confirmPassword) {
+    // Mostrar un mensaje de error
+    return;
+  }
+
+  // Crear un objeto con los datos del usuario
+  const user = {
+    username,
+    email,
+    password
+  };
+
+  // Guardar los datos del usuario en el localStorage
+  saveUser(user);
+
+  // Redirigir al usuario a la página de inicio de sesión
+  window.location.href = 'login.html';
+}
+// script.js
+function loginUser(event) {
+  event.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  if (login(username, password)) {
+    // Redirigir al usuario a la página principal
+    window.location.href = 'index.html';
+  } else {
+    // Mostrar un mensaje de error
+    alert('Usuario invalido o contraseña incorrecta');
+  }
+}

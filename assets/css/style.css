@@ -106,7 +106,7 @@ body {
   }
   
   .btn-primary:hover {
-    background-color: #555;
+    background-color: #0056b3;
   }
 nav {
     background-color: #555;
@@ -140,4 +140,22 @@ nav {
 
 .menu li a:hover {
     background-color: #272624;
+}
+.menu .login {
+  position: absolute;
+  top: 0;
+  right: 50px; 
+}
+
+.menu .register {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu .login a,
+.menu .register a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
 }
