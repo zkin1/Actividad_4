@@ -3,37 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-  <link rel="stylesheet" href="./assets/css/login.css">
-  <link rel="stylesheet" href="./assets/js/script.js">
+  <title>Registro</title>
 </head>
 <body>
-  <div class="register-container">
-    <div class="volver">
-      <a href="index.html" class="back-link">Volver al índice</a>
-    </div>
-    <h2>Register</h2>
-    <form id="register-form">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <span class="error-message" id="email-error"></span>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="form-group">
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
-      </div>
-      <button type="submit">Register</button>
-    </form>
-  </div>
-  <script src="script.js"></script>
+  <nav>
+    <img src="./assets/img/bana.jpg" alt="bana" width="40px">
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li class="login"><a href="login.html">Login</a></li>
+        <li class="register"><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+
+
+
+  <h1>Registro</h1>
+  <form id="register-form">
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" id="username" required>
+    <br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" required>
+    <br>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" required>
+    <br>
+    <label for="confirm-password">Confirmar contraseña:</label>
+    <input type="password" id="confirm-password" required>
+    <br>
+    <button type="submit">Registrarse</button>
+  </form>
+  <script src="./assets/js/register.js"></script>
 </body>
 </html>
