@@ -15,7 +15,6 @@ body {
     display: block;
   }
 
-  
   .carousel-caption {
     position: static;
     padding: 10px;
@@ -31,7 +30,20 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+  #searchInput {
+    border-color: #1B2631;
+    width: 100%;
+    border-radius: 5px;
+    
+  }
   
+  #resultadosBusqueda {
+    border: 1px solid #1B2631;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1B2631;
+  }
+
   .product-image {
     max-width: 100%;
     height: auto;
