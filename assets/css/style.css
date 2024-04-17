@@ -27,12 +27,17 @@ body {
   
   .container {
     max-width: 960px;
-    background-color: #555;
+    background-color: white ;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 200px;
+    margin-top: 400px;
   }
+
+  #carouselProductos {
+    margin-top: 400px; 
+  }
+
   #searchInput {
     border-color: #1B2631;
     width: 100%;
