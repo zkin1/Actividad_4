@@ -1,4 +1,10 @@
+body{
+    background-color: #1B2631;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 nav {
+
     position: fixed;
     top: 0;
     left: 0;
@@ -6,10 +12,9 @@ nav {
     background-color: #555;
     padding: 0;
     height: 50px;
-    margin: 0; /* Asegura que no haya margen en cualquier dirección */
+    margin: 0; 
 }
 
-/* Resto de tus estilos */
 .menu {
     list-style-type: none;
     margin: 0;
@@ -64,3 +69,34 @@ nav img {
     width: 40px;
     height: 40px;
 }
+
+
+.artista1 {
+    margin-top: 60px;
+    margin-left: 30px; 
+    padding: 40px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+.artista2 {
+    margin-top: 30px;
+    margin-left: 500px; 
+    padding: 40px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+}
+
